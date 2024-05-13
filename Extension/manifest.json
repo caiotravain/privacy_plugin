@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Color Border",
+    "version": "1.0",
+    "description": "Adds a color border to every site",
+    "permissions": ["<all_urls>", "webRequest", "cookies"],
+    "background": {
+        "scripts": ["background.js"]
+      },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["borderfy.js"]
+      }
+    ]
+  }
+  
